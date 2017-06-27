@@ -1,5 +1,5 @@
 class User < ApplicationRecord
-  has_many :poems
-  
+  has_many :haikus
+
   has_secure_password
 end
