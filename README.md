@@ -1,24 +1,8 @@
-# README
+# Haikus Whenever
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Inspired by my old Tumblr account, I'm building a simple CRUD app in Rails where users can create an account and submit haikus whenever they want. 
 
-Things you may want to cover:
+This will be a fun exercise in user authentication, secure routes, and playing with Materialize for the first time.
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Created: June 26, 2017
+Updated: June 26, 2017
