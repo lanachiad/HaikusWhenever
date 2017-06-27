@@ -1,8 +1,9 @@
 Rails.application.routes.draw do
   root 'home#index'
 
-  get '/users/login', to: 'users#login'
-  get '/users/loggingin', to: 'users#loggingin'
+  get '/signup', to: 'users#new'
+  get '/login', to: 'users#login'
+  get 'logout', to: 'users#delete'
 
   resources :users, only: [:show, :create, :new, :edit, :delete] do 
     resources :haikus 
