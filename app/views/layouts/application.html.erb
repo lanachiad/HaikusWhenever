@@ -11,10 +11,13 @@
   <body>
     <ul>
       <li><a href="#">Home</a></li>
-      <li><a href="/signup">Signup</a></li>
-      <li><a href="#">Login</a></li>
-      <li><a href="#">Account</a></li>
-      <li><a href="#">Logout</a></li>
+      <% if logged_in? %>
+        <li><a href="#">Account</a></li>
+        <li><a href="#">Logout</a></li>
+      <% else %>
+        <li><a href="/signup">Signup</a></li>
+        <li><a href="#">Login</a></li>
+      <% end %>
     </ul>
     <%= yield %>
   </body>
