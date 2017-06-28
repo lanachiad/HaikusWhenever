@@ -4,6 +4,6 @@
   <a href="#">Post Haiku</a>
   <a href="#">See Haikus</a>
 <% else %>
-  <a href="/signup">Sign Up</a>
+  <%= link_to "Logout", logout_path, method: :delete %>
   <a href="#">Log In</a>
 <% end %>

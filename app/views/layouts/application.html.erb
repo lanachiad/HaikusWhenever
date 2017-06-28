@@ -15,7 +15,7 @@
         <li><a href="#">Account</a></li>
         <li><%= link_to "Logout", logout_path, method: :delete %></li>
       <% else %>
-        <li><a href="/signup">Signup</a></li>
+        <li><%= link_to "Sign Up", signup_path %></li>
         <li><a href="#">Login</a></li>
       <% end %>
     </ul>
