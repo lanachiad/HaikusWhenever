@@ -3,15 +3,19 @@ class UsersController < ApplicationController
   end
 
   def new
+    @user = User.new
   end
 
   def create
-  end
+    @user = User.new(user_params)
 
-  def login
-  end
-
-  def loggingin
+    if @user.save
+      log_in @user
+      redirect_to '/'
+    else
+      @errors = @user.errors.full_messages
+      render 'new'
+    end
   end
 
   def edit
@@ -20,6 +24,11 @@ class UsersController < ApplicationController
   def update
   end
 
-  def delete
+  def destroy
   end
+
+  private
+    def user_params
+      params.require(:user).permit(:first_name,:last_name,:email, :password)
+    end
 end
