@@ -9,6 +9,16 @@
   </head>
 
   <body>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <% if logged_in? %>
+        <li><a href="#">Account</a></li>
+        <li><%= link_to "Logout", logout_path, method: :delete %></li>
+      <% else %>
+        <li><a href="/signup">Signup</a></li>
+        <li><a href="#">Login</a></li>
+      <% end %>
+    </ul>
     <%= yield %>
   </body>
 </html>

@@ -1,0 +1,9 @@
+<h1>Haikus Whenever</h1>
+<h3>Noncommittally<br />Post all the haikus you want<br />And read some others</h3>
+<% if logged_in? %>
+  <a href="#">Post Haiku</a>
+  <a href="#">See Haikus</a>
+<% else %>
+  <a href="/signup">Sign Up</a>
+  <a href="#">Log In</a>
+<% end %>

@@ -1,0 +1,11 @@
+<section id="errors-section">
+  <article id="errors-details">
+    <% if @errors %>
+      <ul>
+        <%@errors.each do |error| %>
+          <li><%= error %></li>
+        <% end %>
+      </ul>
+    <% end %>
+  </article>
+</section>
