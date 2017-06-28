@@ -6,4 +6,4 @@ This will be a fun exercise in user authentication, secure routes, and playing w
 
 Created: June 26, 2017
 
-Updated: June 26, 2017
+Updated: June 28, 2017
