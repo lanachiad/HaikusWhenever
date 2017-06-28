@@ -6,7 +6,6 @@ Rails.application.routes.draw do
   post '/login', to: 'sessions#create'
   delete '/logout', to: 'sessions#destroy'
 
-  resources :users, only: [:show, :create, :new, :edit, :delete] do 
-    resources :haikus 
-  end
+  resources :users, only: [:show, :create, :new, :edit, :update, :destroy]
+  resources :haikus
 end
