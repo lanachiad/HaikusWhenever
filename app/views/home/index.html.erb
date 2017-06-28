@@ -2,7 +2,7 @@
 <h3>Noncommittally<br />Post all the haikus you want<br />And read some others</h3>
 <% if logged_in? %>
   <a href="#">Post Haiku</a>
-  <a href="#">See Haikus</a>
+  <%= link_to "See Haikus", haikus_path %>
 <% else %>
   <%= link_to "Logout", logout_path, method: :delete %>
   <%= link_to "Login", login_path %>

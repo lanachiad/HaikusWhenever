@@ -1,8 +1,6 @@
 class HaikusController < ApplicationController
   def index
-  end
-
-  def show
+    @haikus = Haiku.all
   end
 
   def new
