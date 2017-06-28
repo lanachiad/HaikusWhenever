@@ -7,5 +7,5 @@ Rails.application.routes.draw do
   delete '/logout', to: 'sessions#destroy'
 
   resources :users, only: [:show, :create, :new, :edit, :update, :destroy]
-  resources :haikus
+  resources :haikus, except: [:show]
 end

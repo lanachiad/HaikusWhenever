@@ -3,9 +3,6 @@ class HaikusController < ApplicationController
     @haikus = Haiku.all
   end
 
-  def show
-  end
-
   def new
   end
 
