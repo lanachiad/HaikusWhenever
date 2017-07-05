@@ -16,7 +16,10 @@ ActiveRecord::Schema.define(version: 20170627011938) do
   enable_extension "plpgsql"
 
   create_table "haikus", force: :cascade do |t|
-    t.text "poem"
+    t.string "title"
+    t.text "first_line"
+    t.text "second_line"
+    t.text "third_line"
     t.bigint "user_id", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
