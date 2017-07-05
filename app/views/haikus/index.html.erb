@@ -3,9 +3,9 @@
 <% else %>
   <% @haikus.each do |haiku| %>
     <h2><%= haiku.title %></h2>
-    <p><%= haiku.first_line %></p>
-    <p><%= haiku.second_line %></p>
-    <p><%= haiku.third_line %></p>
+    <p><%= haiku.first_line %><br />
+    <%= haiku.second_line %><br />
+    <%= haiku.third_line %></p>
     <p><em><%= haiku.user.username %></em></p>
   <% end %>
 <% end %>
