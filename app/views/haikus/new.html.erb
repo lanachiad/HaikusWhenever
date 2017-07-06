@@ -1,1 +1,7 @@
-<p>hey</p>
+<%= form_for @haiku, :url => "/haikus" do |f| %>
+  <%= f.text_field :title, placeholder: "Title" %>
+  <%= f.text_field :first_line, placeholder: "First line" %>
+  <%= f.text_field :second_line, placeholder: "Second line" %>
+  <%= f.text_field :third_line, placeholder: "Third line" %>
+  <%= f.submit %>
+<% end %>
