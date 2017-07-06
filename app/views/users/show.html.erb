@@ -1,1 +1,14 @@
-<p>Hey <%= @user.first_name %></p>
+<h2>Welcome, <%= @user.first_name %>!</h2>
+<div>
+  <h3>Your Haikus</h3>
+  <div>
+    <% @user.haikus.each do |haiku| %>
+      <div>
+      <h4><%= haiku.title %></h4>
+      <p><%= haiku.first_line %><br />
+      <%= haiku.second_line %><br />
+      <%= haiku.third_line %></p>
+      </div>
+    <% end %>
+  </div>
+</div>
