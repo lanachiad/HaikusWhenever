@@ -10,9 +10,9 @@
 
   <body>
     <ul>
-      <li><a href="#">Home</a></li>
+      <li><%= link_to "Home", root_path %></li>
       <% if logged_in? %>
-        <li><a href="#">Account</a></li>
+        <li><%= link_to "Account", "/users/#{@user.id}" %></li>
         <li><%= link_to "Logout", logout_path, method: :delete %></li>
       <% else %>
         <li><%= link_to "Sign Up", signup_path %></li>
