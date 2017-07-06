@@ -4,10 +4,14 @@
   <div>
     <% @user.haikus.each do |haiku| %>
       <div>
-      <h4><%= haiku.title %></h4>
-      <p><%= haiku.first_line %><br />
-      <%= haiku.second_line %><br />
-      <%= haiku.third_line %></p>
+        <h4><%= haiku.title %></h4>
+        <p><%= haiku.first_line %><br />
+        <%= haiku.second_line %><br />
+        <%= haiku.third_line %></p>
+        <div>
+          <%= link_to "Edit", edit_haiku_path %>
+          <%= link_to "Delete" %>
+        </div>
       </div>
     <% end %>
   </div>
