@@ -1,9 +1,11 @@
 class HaikusController < ApplicationController
   def index
+    @user = current_user
     @haikus = Haiku.all
   end
 
   def new
+    @user = current_user
     @haiku = Haiku.new
   end
 
